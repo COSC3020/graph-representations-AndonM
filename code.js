@@ -5,6 +5,7 @@ function convertToAdjMatrix(adjList) {
                 return [];
         }
         else {
+        var adjMatirx = [];
         const maxNode = adjList.length - 1;
         const adjMatrix = new Array(maxNode + 1).fill(0).map(function () {
             return new Array(maxNode + 1).fill(0);
