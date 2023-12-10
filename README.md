@@ -10,13 +10,4 @@ try not to peek before attempting to solve it on your own.
 
 ## Runtime Analysis
 
-What is the runtime complexity of the conversion that you implemented? Does it
-depend on the number of vertices, the number of edges, or both?
-
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. Add your answer to this markdown file.
-
-## Bonus
-
-Implement a function to convert an adjacency matrix to an adjacency list and
-analyze it as above.
+Looking at the initialization matrix I came to the conclusion that this would run in $O(n^2)$ time as we are filling an n x n matrix with zeroes before we can get started. The nested loop is where things get a bit trickier. Whereas the outer loop runs from 0 to maxNode, the inner loop may also have to go through every matrix entry as well once again creating an $O(n^2)$ time complexity in the worst case. Putting it all together we get $O(2n^2)$. Taking out the constant factor leaves us with a final answer of simply $O(n^2)$.
