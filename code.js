@@ -1,18 +1,18 @@
-function convertToAdjMatrix(adjList) {
-    if(adjList.length < 1) {
+function convertToAdjList(adjMatrix) {
+    if(adjMatrix.length < 1) {
         return [];
     }
     else {
-        var adjMatrix = [];
-        for(let i = 0; i < adjList.length; i++) {
+        var adjList = [];
+        for(let i = 0; i < adjMatrix.length; i++) {
             var edges = [];
-            for(let j = 0; j < adjList.length; j++) {
-                if(adjList[i][j] == 1) {
+            for(let j = 0; j < adjMatrix.length; j++) {
+                if(adjMatrix[i][j] == 1) {
                     edges.push(j);
                 }
             }
-            adjMatrix.push(edges);
+            adjList.push(edges);
             }
-        return adjMatrix;          
+        return adjList;          
         }
 }
