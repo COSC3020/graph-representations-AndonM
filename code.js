@@ -1,7 +1,7 @@
 // I THINK THIS IS CLOSE TO WHAT I NEED; HOWEVER, THE TESTING SUITE DOES NOT AGREE. I GOT A COUNTEREXAMPLE OF [] MULTIPLE TIMES WHEN ATTEMPTING TO RUN THIS
 
 function convertToAdjMatrix(adjList) {
-        if (adjList.length == 0) {
+        if (adjList.length < 1) {
                 return [];
         }
         else {
